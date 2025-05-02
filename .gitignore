@@ -1,0 +1,6 @@
+/test
+/target
+/.idea
+/.vscode
+/target/classes
+/.classpath
