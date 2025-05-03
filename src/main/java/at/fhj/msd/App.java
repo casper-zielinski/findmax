@@ -8,34 +8,7 @@ import java.util.List;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        String a = "aab";
-        String b = "aba";
-
-        int jeden = 1;
-        int dwa = 2;
-        int three = 0;
-
-        List<Integer> intest = new ArrayList<>();
-        intest.add(three);
-        intest.add(dwa);
-        intest.add(jeden);
-        intest.add(40);
-        intest.add(2);
-        System.out.println(intest);
-        System.out.println(max(intest));
-        List<String> Test = new ArrayList<>();
-        Test.add(b);
-        Test.add(a);
-        Test.add("zebra");
-        Test.add("test");
-        System.out.println(Test);
-        System.out.println(max(Test));
-        
-
-
-        // System.out.println(max(a,b));
-        // System.out.println(max(dwa, jeden));
+        //Previous Tests
     }
 
     public static <T extends Comparable<T>> T max(T a, T b){
