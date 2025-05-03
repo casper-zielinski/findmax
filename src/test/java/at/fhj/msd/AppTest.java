@@ -51,6 +51,14 @@ public class AppTest {
     }
 
     @Test
+    @DisplayName("Constructor Test")
+    void AppConstructorTest()
+    {
+        App app = new App();
+        assertEquals(app, app);
+    }
+
+    @Test
     @DisplayName("max method Test with 2 Parameters")
     void maxTest(){
         assertEquals(2, max(a,b));
@@ -60,5 +68,10 @@ public class AppTest {
     }
 
     @Test
-    @DisplayName()
+    @DisplayName("max method Test with List")
+    void MaxListTest(){
+        NumTest.add(10);
+        NumTest.add(4);
+        assertEquals(10, max(NumTest));
+    }
 }
