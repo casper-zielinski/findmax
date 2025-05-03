@@ -1,7 +1,5 @@
 package at.fhj.msd;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -30,4 +28,13 @@ public class App {
         }
         return null;
     }
-}
+
+    public static <T extends Comparable<T>> T max(List<T> a){
+        
+
+                
+            
+        }
+
+
+    }
