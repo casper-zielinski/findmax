@@ -1,5 +1,6 @@
 package at.fhj.msd;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,9 +14,28 @@ public class App {
 
         int jeden = 1;
         int dwa = 2;
+        int three = 0;
 
-        System.out.println(max(a,b));
-        System.out.println(max(dwa, jeden));
+        List<Integer> intest = new ArrayList<>();
+        intest.add(three);
+        intest.add(dwa);
+        intest.add(jeden);
+        intest.add(40);
+        intest.add(2);
+        System.out.println(intest);
+        System.out.println(max(intest));
+        List<String> Test = new ArrayList<>();
+        Test.add(b);
+        Test.add(a);
+        Test.add("zebra");
+        Test.add("test");
+        System.out.println(Test);
+        System.out.println(max(Test));
+        
+
+
+        // System.out.println(max(a,b));
+        // System.out.println(max(dwa, jeden));
     }
 
     public static <T extends Comparable<T>> T max(T a, T b){
@@ -31,9 +51,9 @@ public class App {
 
     public static <T extends Comparable<T>> T max(List<T> a){
         
-
-                
-            
+        MaxList<T> ml = new MaxList<>();
+        a.sort(ml);
+        return a.get(a.size() - 1);
         }
 
 
