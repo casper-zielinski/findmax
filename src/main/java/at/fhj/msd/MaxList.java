@@ -1,6 +1,6 @@
 package at.fhj.msd;
 
-import static at.fhj.msd.App.max;
+
 
 import java.util.Comparator;
 
