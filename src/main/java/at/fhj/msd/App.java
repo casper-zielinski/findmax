@@ -32,6 +32,17 @@ public class App {
         System.out.println(Test);
         System.out.println(max(Test));
         
+        Person p1 = new Person(three, a);
+        Person p2 = new Person(dwa, a);
+        Person p3 = new Person(21, a);
+        List<Person> pp = new ArrayList<>();
+        pp.add(p1);
+        pp.add(p2);
+        pp.add(p3);
+        pp.add(new Person(33, "Daniel"));
+        System.out.println(maxP(pp));
+    
+        
 
 
         // System.out.println(max(a,b));
@@ -55,6 +66,14 @@ public class App {
         a.sort(ml);
         return a.get(a.size() - 1);
         }
+
+    public static Person maxP(List<Person> persons)
+    {
+        PersonMax pm = new PersonMax();
+        persons.sort(pm);
+        return persons.get(persons.size() - 1);
+    }
+
 
 
     }
