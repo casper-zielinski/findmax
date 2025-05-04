@@ -29,5 +29,13 @@ public class App {
         return a.get(a.size() - 1);
         }
 
+    public static Person maxP(List<Person> persons)
+    {
+        PersonMax pm = new PersonMax();
+        persons.sort(pm);
+        return persons.get(persons.size() - 1);
+    }
+
+
 
     }
