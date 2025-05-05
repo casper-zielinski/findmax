@@ -16,6 +16,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static at.fhj.msd.App.maxP;
+import static at.fhj.msd.App.maxPName;
 
 /**
  * Unit test for simple App.
@@ -42,6 +43,7 @@ public class AppTest {
         PerTest.add(new Person(20, "Zack"));
         PerTest.add(new Person(33, "Aaron"));
         PerTest.add(new Person(25, "Zeke"));
+        PerTest.add(new Person(33, "Aaron"));
     }
     /**
      * Rigorous Test :-)
@@ -111,5 +113,16 @@ public class AppTest {
         String content = output.toString().trim();
 
         assertEquals("aal is 1 years old", content);
+    }
+
+    @Test
+    @DisplayName("maxPName method Test")
+    void MaxPersonNameTest(){
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(output));
+        System.out.println(maxPName(PerTest));
+
+        String printed = output.toString().trim();
+        assertEquals("Zeke is 25 years old", printed);
     }
 }

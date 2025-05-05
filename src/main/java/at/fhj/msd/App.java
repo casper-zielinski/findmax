@@ -37,6 +37,10 @@ public class App {
         return persons.get(persons.size() - 1);
     }
 
-
-
+    public static Person maxPName(List<Person> persons)
+    {
+        PersonNameComparator pm = new PersonNameComparator();
+        persons.sort(pm);
+        return persons.get(persons.size() - 1);
     }
+}

@@ -1,9 +1,6 @@
 package at.fhj.msd;
 
-
-
 import java.util.Comparator;
-
 
 public class MaxList<T extends Comparable <T>> implements Comparator<T> {
 
@@ -12,6 +9,5 @@ public class MaxList<T extends Comparable <T>> implements Comparator<T> {
       {
             return a.compareTo(b);
       }
-
 
 }

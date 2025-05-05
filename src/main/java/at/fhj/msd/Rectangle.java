@@ -15,4 +15,9 @@ public class Rectangle {
             return this.width * this.height;
       }
 
+      @Override
+      public String toString()
+      {
+            return String.format("%.1f x %.1f", this.width, this.height);
+      }
 }
